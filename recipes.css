@@ -1,0 +1,93 @@
+/* Стили для рецептов */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Стиль контейнера картинки и текста */
+.recipe-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.ingredients-box {
+    width: 350px; /* Такая же ширина как у картинки */
+    margin-top: 10px;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.ingredients-list {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+.ingredients-list li {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Стили для инструкций */
+.instructions {
+    margin-top: 20px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    margin: 10px 0 0 0;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+/* Уменьшаем картинку */
+.recipe-container img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Текст справа от картинки */
+.recipe-text {
+    flex: 1;
+    max-width: 1000px; /* Ограничиваем ширину */
+    word-break: break-word; /* Переносит любые слова */
+    overflow: hidden; /* На всякий случай */
+}
+
+.recipe-text p {
+    white-space: normal;
+    word-break: normal;
+    line-height: 1.5;
+    margin: 10px 0; 
+}
+
+.recipe-text p strong {
+    display: block;
+    margin: 10px 0 5px 0;
+    font-size: 1.1em;
+}
+
+/* Кнопка "Назад" */
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background: #45a049;
+}
